@@ -3,11 +3,11 @@ use fibonacci_client::{run_experiment, ExperimentConfiguration};
 #[tokio::main]
 async fn main() {
     let report = run_experiment(ExperimentConfiguration {
-        label: "Performance test strong-laptop".to_string(),
+        label: "Performance test medium-laptop".to_string(),
         request_start: 5,
         request_increment: 5,
         runs: 50,
-        report_name: "performance_test_strong_laptop.json".to_string(),
-        target: "http://127.0.0.1:3000/".to_string(),
+        report_name: "performance_test_medium_laptop.json".to_string(),
+        target: "http://192.168.1.137:3000/".to_string(),
     }).await;
 }
