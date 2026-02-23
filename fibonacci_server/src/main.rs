@@ -21,7 +21,7 @@ async fn main() {
     axum::serve(listener, app).await.unwrap();
 }
 
-const FIB_AMOUNT: usize = 34;
+const FIB_AMOUNT: usize = 32;
 async fn get_fib() -> Json<Vec<i32>> {
     let now = Instant::now();
     let mut array = vec![0; FIB_AMOUNT];
