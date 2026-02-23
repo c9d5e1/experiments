@@ -1,0 +1,11 @@
+[package]
+name = "fibonacci_server"
+version = "0.1.0"
+edition = "2024"
+
+[profile.dev]
+opt-level = 3
+
+[dependencies]
+tokio = { version = "1.49.0", features = ["full"] }
+axum = "0.8.8"
