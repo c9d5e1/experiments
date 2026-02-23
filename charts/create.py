@@ -8,6 +8,8 @@ REPORTS_FOLDER = "reports"
 OUTPUT_FOLDER = "charts"
 
 for filename in os.listdir(REPORTS_FOLDER):
+    if not filename.endswith(".json"):
+        continue
     filepath = os.path.join(REPORTS_FOLDER, filename)
     with open(filepath, 'r') as f:
         full_data = json.load(f)

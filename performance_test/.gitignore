@@ -1,4 +1,4 @@
 target
 Cargo.lock
 .idea
-performance_test.json
+performance_test_bare_pi.json
